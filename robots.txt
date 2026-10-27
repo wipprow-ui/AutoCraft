@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://wipprow-ui.github.io/AutoCraft/sitemap.xml
