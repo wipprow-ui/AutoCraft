@@ -142,8 +142,7 @@ function wire() {
   document.querySelectorAll('.langs button').forEach((btn) => {
     btn.addEventListener('click', () => apply(btn.dataset.lang))
   })
-  const start = localStorage.getItem('autocraft-site-lang') || (navigator.language || 'en').slice(0, 2)
-  apply(['en', 'ru', 'de'].includes(start) ? start : 'en')
+  apply('en')
 }
 
 wire()
