@@ -365,6 +365,10 @@ h1 em {
 }
 
 @media (max-width: 860px) {
+  .nav-right {
+    flex-wrap: wrap;
+  }
+
   .hero,
   .grid,
   .steps,
