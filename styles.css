@@ -280,10 +280,71 @@ h1 em {
   color: var(--mute);
   font-size: 14px;
   font-weight: 600;
+  white-space: nowrap;
 }
 
 .nav-link:hover {
   color: var(--gold);
+}
+
+.nav-link-gold {
+  color: var(--gold);
+  border: 1px solid rgba(224, 177, 58, 0.35);
+  border-radius: 999px;
+  padding: 7px 12px;
+}
+
+.vs-section {
+  scroll-margin-top: 18px;
+  margin: 12px 0 8px;
+  padding: 28px 22px 22px;
+  border: 1px solid rgba(224, 177, 58, 0.28);
+  background: rgba(224, 177, 58, 0.06);
+  border-radius: 20px;
+}
+
+.compare {
+  display: grid;
+  gap: 0;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  overflow: hidden;
+  background: var(--ink-2);
+}
+
+.compare-head,
+.compare-row {
+  display: grid;
+  grid-template-columns: 0.7fr 1.15fr 1.15fr;
+  gap: 12px;
+  padding: 14px 16px;
+}
+
+.compare-head {
+  background: rgba(224, 177, 58, 0.14);
+  color: var(--gold);
+  font-size: 13px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.compare-row {
+  border-top: 1px solid var(--line);
+}
+
+.compare-row b {
+  color: var(--paper);
+}
+
+.compare-row p {
+  margin: 0;
+  color: var(--mute);
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+.compare-row p:nth-child(2) {
+  color: var(--paper);
 }
 
 .lead-inline {
@@ -367,6 +428,12 @@ h1 em {
 @media (max-width: 860px) {
   .nav-right {
     flex-wrap: wrap;
+  }
+
+  .compare-head,
+  .compare-row {
+    grid-template-columns: 1fr;
+    gap: 6px;
   }
 
   .hero,
