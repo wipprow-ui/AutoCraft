@@ -276,6 +276,48 @@ h1 em {
   margin-bottom: 12px;
 }
 
+.nav-link {
+  color: var(--mute);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.nav-link:hover {
+  color: var(--gold);
+}
+
+.lead-inline {
+  margin: -6px 0 18px;
+  color: var(--mute);
+  max-width: 720px;
+  line-height: 1.55;
+}
+
+.guide {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.tip {
+  margin-top: 14px;
+  border: 1px solid rgba(224, 177, 58, 0.28);
+  background: rgba(224, 177, 58, 0.08);
+  border-radius: 16px;
+  padding: 18px;
+}
+
+.tip b {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.tip p {
+  margin: 0;
+  color: var(--mute);
+  line-height: 1.55;
+}
+
 .reqs {
   display: flex;
   flex-wrap: wrap;
@@ -326,6 +368,7 @@ h1 em {
   .hero,
   .grid,
   .steps,
+  .guide,
   .download,
   .foot {
     grid-template-columns: 1fr;
